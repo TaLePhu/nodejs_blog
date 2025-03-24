@@ -10,6 +10,11 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const port = 3000;
 
+//link static file
+app.use(express.static(path.join(__dirname, 'public')));
+
+
+//log http
 app.use(morgan('combined'));
 
 // Template engine
