@@ -39,9 +39,9 @@ app.engine(
     }),
 );
 app.set('view engine', '.hbs'); //Xác định Handlebars làm view engine mặc định.
-app.set('views', path.join(__dirname, 'resources/views')); // Đặt thư mục chứa file giao diện (.hbs).
+app.set('views', path.join(__dirname, 'resources', 'views')); // Đặt thư mục chứa file giao diện (.hbs).
 
-console.log('Path: ', path.join(__dirname, 'resources/views'));
+// console.log('Path: ', path.join(__dirname, 'resources/views'))
 
 // routes
 route(app);
